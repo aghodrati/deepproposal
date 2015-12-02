@@ -1,7 +1,8 @@
-# deepproposal
-code for DeepProposal paper presented in ICCV 2015
+# DeepProposal
+code for DeepProposal paper presented in ICCV 2015 (http://arxiv.org/abs/1510.04445):
+Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepProposal: Hunting Objects by Cascading Deep Convolutional Layers".
 
-#Installing
+# Installing
 - Dependencies should be installed according to their instructions. They should be in ./deps/ folder:
   - matconvnet-1.0-beta8 : http://www.vlfeat.org/matconvnet/download/matconvnet-1.0-beta8.tar.gz (compile it in gpu-enabled mode)
   - piotr_toolbox_V3.40 : http://vision.ucsd.edu/~pdollar/toolbox/piotr_toolbox_V3.40.zip
