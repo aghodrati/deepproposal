@@ -1,5 +1,6 @@
 # DeepProposal
 code for DeepProposal paper presented in ICCV 2015 (http://arxiv.org/abs/1510.04445):
+
 Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepProposal: Hunting Objects by Cascading Deep Convolutional Layers".
 
 # Installing
@@ -27,13 +28,13 @@ Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepP
   - contour model: as described in section 4 of the paper (trained model is included)
   - pre-trained CNN model (http://www.vlfeat.org/matconvnet/models/imagenet-caffe-ref.mat): make a symbolic link in ./models/cnn/ that point to the imagenet-caffe-ref.mat or change the path in get_opts.m
 
-#Demo
+# Demo
 You can run the "demo.m" for extracting proposals for a given image.
 
-#Datasets
+# Datasets
 A script called "main_run.m" is included to extract proposals for VOC 2007 and COCO 2014. you should setup VOC07 development kit and/or COCO14 api+dataset according to their instructions and then set paths in get_opts.m
 
-#Notes
+# Notes
 - All boxes are in format of [x y x+w y+h]
 - This version does not use spatial pyramid representation for second stage.
 - For COCO14 dataset, objects with area smaller than 32^2 are considered as difficult so they are omitted during evaluation. you can change it in arrange_imdb.m
