@@ -14,12 +14,12 @@ code for DeepProposal paper presented in ICCV 2015
   - mex private/spDetectMex.cpp -outdir private [OMPPARAMS]
   - mex private/edgeBoxesMex.cpp -outdir private
 
-Here [OMPPARAMS] are parameters for OpenMP and are OS and compiler dependent.
-  - Windows: [OMPPARAMS] = '-DUSEOMP' 'OPTIMFLAGS="$OPTIMFLAGS' '/openmp"'
-  - Linux V1: [OMPPARAMS] = '-DUSEOMP' CFLAGS="\$CFLAGS -fopenmp" LDFLAGS="\$LDFLAGS -fopenmp"
-  - Linux V2: [OMPPARAMS] = '-DUSEOMP' CXXFLAGS="\$CXXFLAGS -fopenmp" LDFLAGS="\$LDFLAGS -fopenmp" \n
+  - Here [OMPPARAMS] are parameters for OpenMP and are OS and compiler dependent.
+    - Windows: [OMPPARAMS] = '-DUSEOMP' 'OPTIMFLAGS="$OPTIMFLAGS' '/openmp"'
+    - Linux V1: [OMPPARAMS] = '-DUSEOMP' CFLAGS="\$CFLAGS -fopenmp" LDFLAGS="\$LDFLAGS -fopenmp"
+    - Linux V2: [OMPPARAMS] = '-DUSEOMP' CXXFLAGS="\$CXXFLAGS -fopenmp" LDFLAGS="\$LDFLAGS -fopenmp" \n
 
-To compile without OpenMP simply omit [OMPPARAMS]; note that code will be single threaded in this case.
+  - To compile without OpenMP simply omit [OMPPARAMS]; note that code will be single threaded in this case.
 
 - I have added the compiled files for nms_c.cpp and intg_sub.cpp under 64-bit linux. If you want to compile it, use mex file_name.cpp
 
