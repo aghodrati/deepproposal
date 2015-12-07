@@ -3,11 +3,11 @@ code for DeepProposal paper presented in ICCV 2015 (http://arxiv.org/abs/1510.04
 
 Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepProposal: Hunting Objects by Cascading Deep Convolutional Layers".
 
-# Instalation
+# Installing
 - Dependencies should be installed according to their instructions. They should be in ./deps/ folder:
-  - matconvnet-1.0-beta8 : http://www.vlfeat.org/matconvnet/download/matconvnet-1.0-beta8.tar.gz (compile it in gpu-enabled mode)
+  - matconvnet : https://github.com/vlfeat/matconvnet (compile it in gpu-enabled mode)
   - piotr_toolbox_V3.40 : http://vision.ucsd.edu/~pdollar/toolbox/piotr_toolbox_V3.40.zip
-  - liblinear-1.94 : https://github.com/cjlin1/liblinear/archive/v194.tar.gz (if you want to train an objectness)
+  - liblinear svm : https://github.com/cjlin1/liblinear (if you want to train an objectness)
   - modified version of EdgeBox which I have included it.
 
 - Instruction to compile the modified code of edgebox(I have included files for 64-bit linux):
@@ -28,7 +28,6 @@ Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepP
   - contour model: as described in section 4 of the paper (trained model is included)
   - pre-trained CNN model (http://www.vlfeat.org/matconvnet/models/imagenet-caffe-ref.mat): make a symbolic link in ./models/cnn/ that point to the imagenet-caffe-ref.mat or change the path in get_opts.m
 
-- remember to add PATH_TO_CUDA/lib64/ in your library path in case you had problems running Matconvnet on gpu.
 # Demo
 You can run the "demo.m" for extracting proposals for a given image.
 
