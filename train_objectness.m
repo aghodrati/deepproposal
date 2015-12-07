@@ -2,7 +2,7 @@ function mdl_o = train_objectness( win_sizes, net_gpu, opts )
 % if the models are already trained, it loads them otherwise train
 % objecness models from scratch.
 
-addpath(genpath('./deps/liblinear-1.94/'));
+addpath(genpath('./deps/liblinear-2.1/'));
 
 trainer.svm_C = 1;
 trainer.bias_mult = 0;
