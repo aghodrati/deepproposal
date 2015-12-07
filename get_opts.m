@@ -11,7 +11,7 @@ end
 %add necessary paths
 addpath('./deps/edges-master/');
 addpath(genpath('./deps/piotr_toolbox_V3.40/toolbox/'));
-run('./deps/matconvnet-1.0-beta8/matlab/vl_setupnn');
+run('./deps/matconvnet/matlab/vl_setupnn');
 
 %models
 opts.model.contour = './models/contour/modelF_C2.mat';
