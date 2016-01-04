@@ -1,6 +1,6 @@
 function x_map = compute_featmaps(im, net, opts)
 
-averageImage = single(net.normalization.averageImage);
+averageImage = single(net.meta.normalization.averageImage);
 im_avg = mean(mean(averageImage,1),2);
 
 %fprintf('-pr: connecting to gpu ...\n');
