@@ -300,7 +300,7 @@ for i=1:length(ix_rand)
     neg_ix_rand = neg_ix(neg_ix_rand);
 
     feats_intg = integral_feats2(x_feat_map, props([neg_ix_rand; pos_ix],:));
-    %feats_intg = integral_feats_sp(x_feat_map, props([neg_ix_rand; pos_ix],:), 4);
+    %feats_intg = integral_feats_sp(x_feat_map, props([neg_ix_rand; pos_ix],:), 2); %TODO: in case of spatial pyramid pooling
 
     nneg = length(neg_ix_rand);
     X_neg_i = feats_intg(1:nneg,:);
@@ -331,7 +331,7 @@ keys_neg(nix:end,:) = [];
 % ------------------------------------------------------------------------
 function x_map = compute_featmaps(im, net, scale, lid)
 % ------------------------------------------------------------------------
-averageImage = single(net.normalization.averageImage);
+averageImage = single(net.meta.normalization.averageImage);
 im_avg = mean(mean(averageImage,1),2);
 
 %get image statistics

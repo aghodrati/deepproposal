@@ -10,12 +10,13 @@ end
 
 %add necessary paths
 addpath('./deps/edges-master/');
-addpath(genpath('./deps/piotr_toolbox_V3.40/toolbox/'));
-run('./deps/matconvnet/matlab/vl_setupnn');
+addpath(genpath('/users/visics/aghodrat/codes/piotr_toolbox_V3.40/toolbox/')); %TODO: change it
+run('/users/visics/aghodrat/codes/matconvnet-1.0-beta16/matlab/vl_setupnn'); %TODO: change it
+addpath(genpath('/users/visics/aghodrat/codes/liblinear-1.94/')); %TODO: change it
 
 %models
 opts.model.contour = './models/contour/modelF_C2.mat';
-opts.model.cnn = './models/cnn/imagenet-caffe-ref.mat';
+opts.model.cnn = '/esat/fluorite/aghodrat/MatConvNet_models/imagenet-caffe-ref.mat';
 opts.model.objectness = './models/objectness/';
 
 %set paths
@@ -27,11 +28,11 @@ if ~exist(opts.logs_path, 'dir'), mkdir(opts.logs_path); end;
 if ~exist(opts.outs_path, 'dir'), mkdir(opts.outs_path); end;
 
 %set parameters
-opts.thr_s = 0.7; 
+opts.thr_s = 0.5; 
 opts.thr_e = opts.thr_s; %if using adaptive nms introduced in "What makes for effective detection proposals?", arXiv 2015.
 opts.nbox_s1 = 4000; %6000;
 opts.nbox_s2 = 3000; %4000;
-opts.nbox_s3 = 1000;
+opts.nbox_s3 = 2000;
 opts.layers = [14 10 6];
 opts.scales = [227 300 400 600];
 opts.nsliding_win = 50;

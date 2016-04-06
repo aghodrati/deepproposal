@@ -5,12 +5,12 @@
 %%%%%%%%%%%%%%%%%%%%%
 %add necessary paths
 addpath('./deps/edges-master/');
-addpath(genpath('./deps/piotr_toolbox_V3.40/toolbox/'));
-run('./deps/matconvnet-1.0-beta8/matlab/vl_setupnn');
+addpath(genpath('/users/visics/aghodrat/codes/piotr_toolbox_V3.40/toolbox/'));
+run('/users/visics/aghodrat/codes/matconvnet-1.0-beta16/matlab/vl_setupnn');
 
 %models
 opts.model.contour = './models/contour/modelF_C2.mat';
-opts.model.cnn = './models/cnn/imagenet-caffe-ref.mat';
+opts.model.cnn = '/esat/fluorite/aghodrat/MatConvNet_models/imagenet-caffe-ref.mat';
 opts.model.objectness = './models/objectness/';
 
 %set parameters

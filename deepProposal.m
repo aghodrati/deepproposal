@@ -45,8 +45,8 @@ function [ props_all_nms ] = deepProposal( im1, x_map, mdl_o, mdl_e, win_sizes, 
             %feature map for specific scale s
             x_feat_map = x_map{s,l};
             %generate integral image
-            feats_intg = integral_feats2(x_feat_map, props_scl); %TODO
-            %feats_intg = integral_feats_sp(x_feat_map, props_scl, 2);
+            %feats_intg = integral_feats2(x_feat_map, props_scl); %TODO
+            feats_intg = integral_feats_sp(x_feat_map, props_scl, 2);
             %scoring
             detectors = mdl_o{s,l}.detectors;
             dec_values = bsxfun(@plus, feats_intg * detectors.W, detectors.B);

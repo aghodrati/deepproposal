@@ -51,7 +51,7 @@ mdl_contour = mdl_contour.model;
 %%%%%%%%%%%%%%%%%%%%%
 %main loop - iterate over images
 %%%%%%%%%%%%%%%%%%%%%
-for ind=2201:2250 %1:length(gtids)    
+for ind=1:length(gtids)    
     %get image
     im1 = imread(sprintf('%s/%s.%s', opts.imdb.imgpath_tst, gtids{ind}, opts.imdb.img_ext));
     n = n + 1;
