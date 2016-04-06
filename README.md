@@ -1,10 +1,14 @@
+#news
+- generated proposals of our method are added.
+- spatial pyramid pooling is added
+
 # DeepProposal
 code for DeepProposal paper presented in ICCV 2015 (http://arxiv.org/abs/1510.04445):
 
 Amir Ghodrati, Ali Diba, Marco Pedersoli, Tinne Tuytelaars, Luc Van Gool, "DeepProposal: Hunting Objects by Cascading Deep Convolutional Layers".
 
 # Installing
-- Dependencies should be installed according to their instructions. They should be in ./deps/ folder:
+- Dependencies should be installed according to their instructions. They should either be in ./deps/ folder or you need to change the paths in get_opts.m file:
   - matconvnet : https://github.com/vlfeat/matconvnet (compile it in gpu-enabled mode)
   - piotr_toolbox_V3.40 : http://vision.ucsd.edu/~pdollar/toolbox/piotr_toolbox_V3.40.zip
   - liblinear svm : https://github.com/cjlin1/liblinear (if you want to train an objectness)
@@ -36,8 +40,13 @@ A script called "main_run.m" is included to extract proposals for VOC 2007 and C
 
 # Notes
 - All boxes are in format of [x y x+w y+h]
-- This version does not use spatial pyramid representation for second stage.
+- This version does not use spatial pyramid representation for second stage. -UPDATE: It is included now!
 - For COCO14 dataset, objects with area smaller than 32^2 are considered as difficult so they are omitted during evaluation. you can change it in arrange_imdb.m
 - Features can be loaded from './feats/' in case they are already extracted
 - Outputs are stored in './outputs/'.
 - Logs are stored in './logs/'.
+- 
+# UPDATE: generated proposals for VOC2007 test set:
+- DeepProposal-50: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_RHRic3dqeGdCLTQ/view?usp=sharing> Google Drive</a>
+- DeepProposal-70: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_TGFKS1ZHM01weDQ/view?usp=sharing> Google Drive</a>
+- note: the proposals are in the format of [x, y, width, height, confidence]
