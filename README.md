@@ -1,6 +1,6 @@
-#news
+# News
 - generated proposals of our method are added.
-- spatial pyramid pooling is added
+- spatial pyramid pooling models are added
 
 # DeepProposal
 code for DeepProposal paper presented in ICCV 2015 (http://arxiv.org/abs/1510.04445):
@@ -45,7 +45,7 @@ A script called "main_run.m" is included to extract proposals for VOC 2007 and C
 - Features can be loaded from './feats/' in case they are already extracted
 - Outputs are stored in './outputs/'.
 - Logs are stored in './logs/'.
-- 
+
 # UPDATE: generated proposals for VOC2007 test set:
 - DeepProposal-50: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_RHRic3dqeGdCLTQ/view?usp=sharing> Google Drive</a>
 - DeepProposal-70: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_TGFKS1ZHM01weDQ/view?usp=sharing> Google Drive</a>
