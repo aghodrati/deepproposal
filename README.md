@@ -46,7 +46,7 @@ A script called "main_run.m" is included to extract proposals for VOC 2007 and C
 - Outputs are stored in './outputs/'.
 - Logs are stored in './logs/'.
 
-# UPDATE: generated proposals for VOC2007 test set:
-- DeepProposal-50: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_RHRic3dqeGdCLTQ/view?usp=sharing> Google Drive</a>
-- DeepProposal-70: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_TGFKS1ZHM01weDQ/view?usp=sharing> Google Drive</a>
+# UPDATE: generated proposals for VOC2007 trainval/test sets:
+- DeepProposal-50: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_RHRic3dqeGdCLTQ/view?usp=sharing>test</a>
+- DeepProposal-70: <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_Q0laQnZWRGw3ZWs/view?usp=sharing>trainval</a> <a href=https://drive.google.com/file/d/0B8gk4ucVr8z_TGFKS1ZHM01weDQ/view?usp=sharing>test</a>
 - note: the proposals are in the format of [x, y, width, height, confidence]
